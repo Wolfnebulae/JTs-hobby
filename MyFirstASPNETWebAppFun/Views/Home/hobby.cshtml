@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["title"] = "Learn from me!";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="text-center">
+        <div>
+            <img src="~/lib/Overwatchbanner.png" alt="Overwatchbanner">
+        </div>
+        <div />
+        <form>
+            <label>Hours:</label>
+            <input id="hours" />
+            <br />
+            <label>Amount per hour:</label>
+            <input disabled value="$10.98 per hour" />
+            <button id="calculate" type="button">Calculate</button>
+            <br />
+            <label>Total</label>
+        </form>
+        <div class="box">
+            <p id="total"></p>
+        </div>
+    </div>
+</body>
